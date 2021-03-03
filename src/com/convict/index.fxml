@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<BorderPane prefHeight="-Infinity" prefWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.convict.Controller">
+    <top>
+        <ToolBar prefHeight="40.0" prefWidth="-Infinity" BorderPane.alignment="CENTER">
+            <items>
+                <Button mnemonicParsing="false" onAction="#back" text="◁"/>
+                <Button mnemonicParsing="false" onAction="#next" text="▷"/>
+                <Button mnemonicParsing="false" onAction="#refresh" text="刷新"/>
+                <Button mnemonicParsing="false" onAction="#home" text="主页"/>
+                <TextField fx:id="urlTextField" prefWidth="980"/>
+                <Button mnemonicParsing="false" onAction="#go" text="＞"/>
+            </items>
+        </ToolBar>
+    </top>
+    <center>
+        <WebView fx:id="webView" prefHeight="-Infinity" prefWidth="-Infinity" BorderPane.alignment="CENTER"/>
+    </center>
+</BorderPane>
